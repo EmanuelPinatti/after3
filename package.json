@@ -1,0 +1,17 @@
+{
+  "name" : "after3", 
+  "version" : "3.1",
+  "description": "",
+
+  "script": {
+
+  },
+
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  },
+
+  "devDependencies": {
+
+  }
+}
