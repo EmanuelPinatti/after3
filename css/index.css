@@ -1,0 +1,30 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*ESTILOS GALERÍA: OVERLAY*/
+.gallery {
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    /* align-items: center; */
+    /* justify-self: center; */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 250px); */
+    grid-auto-rows: 250px;
+    gap: 1rem;
+}
+
+.gallery__item {
+    background-color: rgb(63, 109, 97);
+}
+
+.gallery__img {
+    /* max-width: 100%; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
