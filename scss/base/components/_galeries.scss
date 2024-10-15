@@ -1,0 +1,71 @@
+/*ESTILOS GALERÍA*/
+.gallery {
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    /* align-items: center; */
+    /* justify-self: center; */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: repeat(3, 250px); */
+    grid-auto-rows: 250px;
+    gap: 1rem;
+
+    .gallery__item {
+        /* background-color: rgb(63, 109, 97); */
+        position: relative;
+        overflow: hidden;
+
+        .gallery__img {
+            /* max-width: 100%; */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /*OVERLAY*/
+        .gallery__overlay {
+        height: 100%;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: translateY(100%);
+        transition: transform 0.5s ease;
+        background-color: rgba(0, 0, 0, 0.350);
+
+        .gallery__text {
+            width: 100%;
+            color: white;
+            font-size: 22px;
+            text-align: center;
+        }
+        
+        }
+
+        &:hover .gallery__overlay{
+            transform: translateY(0%);
+        }
+        
+    }
+
+    /*darle forma a mi grilla*/
+    .gallery__item--1 {
+    grid-column: span 2;
+    grid-row: span 2;
+    }
+
+    .gallery__item--2 {
+    grid-row: span 2;
+    }
+
+    .gallery__item--5 {
+    grid-row: span 2;
+    }
+
+    .gallery__item--8 {
+    grid-column: span 2;
+    } 
+}
